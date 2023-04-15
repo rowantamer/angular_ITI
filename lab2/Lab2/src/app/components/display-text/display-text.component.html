@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="content">
+    <input type="text" id="enter" [(ngModel)]="text">
+    <button id="clear" (click)="resetTextInput()">Reset</button>
+  </div>
+  <p>Your Text: <span id="result">{{text}}</span></p>
+</div>
