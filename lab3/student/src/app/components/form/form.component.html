@@ -1,0 +1,10 @@
+<div class="login-page">
+    <div class="form">
+      <div *ngIf="errorMessage">{{ errorMessage }}</div>
+      <form class="login-form">
+        <input type="text" placeholder="username" [(ngModel)]="name" [ngModelOptions]="{standalone: true}"/>
+        <input type="text" placeholder="Age" [(ngModel)]="age" [ngModelOptions]="{standalone: true}"/>
+        <button (click)="addStudent()">ADD</button>
+      </form>
+    </div>
+  </div>
