@@ -1,0 +1,20 @@
+<div class="login-page">
+  <div class="form">
+    <form class="login-form"(ngSubmit)="Add()" [formGroup]="validationForm">
+      <input class="form-control" name="" value="" type="text" placeholder="username" formControlName="name" />
+      <input class="form-control" type="text" placeholder="Age" formControlName="age" />
+      <input class="form-control" type="email" placeholder="Email" ormControlName="email" />
+      <button type="submit" class="formbutton" value="Add" >ADD</button>
+      <div *ngIf="!AgeValid">
+        <p class="text-center text-white"> 20 &lt; Age &lt; 40</p>
+  </div>
+  <div *ngIf="!emailValid">
+        <p class="text-center text-white">Enter a valid email</p>
+  </div>
+  <div *ngIf="!nameValid && !hasNameValue">
+        <p class="text-center text-white">Invalid entry</p>
+  </div>
+    </form>
+  </div>
+</div>
+

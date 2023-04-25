@@ -1,0 +1,15 @@
+
+<table class="table-fill">
+  <thead>
+  <tr>
+  <th class="text-center">Name</th>
+  <th class="text-center">Age</th>
+  </tr>
+  </thead>
+  <tbody class="table-hover">
+  <tr *ngFor="let student of Students">
+    <td>{{ student.name }}</td>
+    <td>{{ student.age}}</td>
+  </tr>
+  </tbody>
+  </table>
