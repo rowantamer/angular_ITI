@@ -1,0 +1,12 @@
+<div class="login-page">
+  <div class="form">
+    <form (ngSubmit)="Update(name.value,age.value, email.value, address.value,phone.value)">
+      <input (input)="name" #name class="form-control" name="" value="{{student.name}}" type="text" placeholder="username" formControlName="name" />
+      <input (input)="age" #age  class="form-control" type="text" value="{{student.age}}" placeholder="Age" formControlName="age" />
+      <input (input)="email" #email class="form-control" type="email" value="{{student.email}}" placeholder="Email" ormControlName="email" />
+      <input (input)="address" #address class="form-control" type="text" value="{{student.address}}" placeholder="Address" ormControlName="Address" />
+      <input (input)="phone" #phone class="form-control" type="text" value="{{student.phone}}" placeholder="phone" ormControlName="phone" />
+      <button type="submit" class="formbutton" value="Add" >UPDATE</button>
+    </form>
+  </div>
+</div>

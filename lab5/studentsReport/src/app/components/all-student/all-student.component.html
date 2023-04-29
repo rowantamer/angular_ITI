@@ -1,0 +1,29 @@
+
+<table class="table-fill">
+  <thead>
+  <tr>
+  <th class="text-center">id</th>
+  <th class="text-center">Name</th>
+  <th class="text-center">Age</th>
+  <th class="text-center">email</th>
+  <th class="text-center">phone</th>
+  <th class="text-center">address</th>
+  <th scope="col">Details</th>
+  <th scope="col">Edit</th>
+  <th scope="col">Delete</th>
+  </tr>
+  </thead>
+  <tbody class="table-hover" *ngFor="let s of Students">
+  <tr >
+    <td>{{s.id}}</td>
+    <td>{{s.name}}</td>
+    <td>{{s.age}}</td>
+    <td>{{s.email}}</td>
+    <td>{{s.phone}}</td>
+    <td>{{s.address}}</td>
+    <td><button routerLink="/studentDetails/{{s.id}}" type="button" class="btn btn-success"><i class='bx bxs-user-detail'></i></button></td>
+    <td><button routerLink="/updateStudent/{{s.id}}" type="button" class="btn btn-info"><i class='bx bxs-edit'></i></button></td>
+    <td><button type="button" class="btn btn-danger" (click)="deleteStudent(s.id)"><i class='bx bxs-trash-alt'></i></button></td>
+  </tr>
+  </tbody>
+  </table>

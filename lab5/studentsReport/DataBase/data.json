@@ -1,0 +1,36 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Rowan Tamer Ali ",
+      "email": "rowan@gmail.com",
+      "address": "alexandria",
+      "phone": "0128789865",
+      "age": 23
+    },
+    {
+      "id": 2,
+      "name": "Shahd Tamer Ali ",
+      "email": "shahd@gmail.com",
+      "address": "alexandria",
+      "phone": "01003993703",
+      "age": 20
+    },
+    {
+      "id": 2,
+      "name": "Ali Tamer Ali ",
+      "email": "ali@gmail.com",
+      "address": "alexandria",
+      "phone": "01278143755",
+      "age": 18
+    },
+    {
+      "name": "Tamer",
+      "age": "23",
+      "email": "tamer25@gamil.com",
+      "address": "dubai",
+      "phone": "0128888989",
+      "id": 4
+    }
+  ]
+}

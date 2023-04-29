@@ -1,0 +1,12 @@
+<div class="login-page">
+  <div class="form">
+    <form (ngSubmit)="Add(name.value,age.value, email.value, address.value,phone.value);reset();"  >
+      <input (input)="name" #name class="form-control" name="" value="" type="text" placeholder="username" formControlName="name" required />
+      <input (input)="age" #age class="form-control" type="text" placeholder="Age" formControlName="age" required/>
+      <input (input)="email" #email class="form-control" type="email" placeholder="Email" ormControlName="email" required />
+      <input (input)="address" #address class="form-control" type="text" placeholder="Address" ormControlName="Address" required/>
+      <input (input)="phone" #phone class="form-control" type="text" placeholder="phone" ormControlName="phone" required/>
+      <button type="submit" class="formbutton" value="Add">ADD</button>
+    </form>
+  </div>
+</div>
